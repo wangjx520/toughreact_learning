@@ -7,10 +7,10 @@
 #Read input and output file names:
 TherAkin10.dat                  ! thermodynamic database
 iter.dat                        ! iteration information
-co2d_conc.dat                   ! aqueous concentrations in tecplot form
-co2d_min.dat                    ! mineral data  in tecplot form
-co2d_gas.dat                    ! gas data  in tecplot form
-co2d_tim.dat                    ! concentrations at specific elements over time
+co2d_conc_10.dat                   ! aqueous concentrations in tecplot form
+co2d_min_10.dat                    ! mineral data  in tecplot form
+co2d_gas_10.dat                    ! gas data  in tecplot form
+co2d_tim_10.dat                    ! concentrations at specific elements over time
 #Weighting parameters:  itime wupc,dffun,dffung
        1.0       1.0   1.0d-09   1.1d-05           
 #data to convergence criteria:

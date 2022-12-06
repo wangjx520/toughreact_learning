@@ -1,0 +1,83 @@
+  ---> start reading solute.inp
+  ---> finished reading solute.inp 
+
+ --> start reading chemical input data from chemical.inp
+
+
+     Temporarily stop reading chemical.inp to read thermodynamic database....
+    --> Start reading thermodynamic database: TherAkin10.dat      
+****** Warning! LogK values acatter!
+ 
+  --- List of all possible aqueous complexes --- 
+          u+4                 
+          u+3                 
+          uo+                 
+          uo+2                
+          uoh+2               
+          u(oh)+3             
+          uo2(aq)             
+          huo2(aq)            
+          huo2+               
+          uo3(aq)             
+          uo3-                
+          huo3-               
+          uo2oh(aq)           
+          uo2oh+              
+          uo4-2               
+          huo4-               
+          uo2+                
+          uo2so4(aq)          
+          u(oh)2+2            
+          u(oh)3+             
+          u(oh)5-             
+          (uo2)2(oh)2+2       
+          (uo2)3(oh)5+        
+          (uo2)3(oh)7-        
+          uso4+2              
+          uo2so42-2           
+          h2(aq)              
+          oh-                 
+          so3-2               
+          hs-                 
+          h2s(aq)             
+          h2so4(aq)           
+          ho2-                
+          hs2o3-              
+          hso3-               
+          hso4-               
+          hso5-               
+          s-2                 
+          s2-2                
+          s2o3-2              
+          s2o4-2              
+          s2o5-2              
+          s2o6-2              
+          s2o8-2              
+          s3-2                
+          s3o6-2              
+          s4-2                
+          s4o6-2              
+          s5-2                
+          s5o6-2              
+          so2(aq)             
+ 
+  --- Aqueous complexes selected -------------- 
+          oh-                 
+          uo2so4(aq)          
+          uo2so42-2           
+  ---------------------------------------------- 
+ 
+ uraninite             2.463800000000000E-002
+    --> Finished reading thermodynamic database
+     ....back to reading chemical.inp
+
+
+  --> Finished reading chemical.inp file
+
+
+  ...running...
+     see output file: iter.dat             for time and time step information
+
+
+  ...done!   simulation finished
+
