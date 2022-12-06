@@ -1,0 +1,98 @@
+# title
+'1-D CO2 injection' 
+#options for chemical calculations: ! ISPIA,INIBOUND,ISOLVC,ngamm,NGAS1,ichdump,kcpl,Ico2h2o,iTDS_REACT
+    2    1    5    0    1    0    0    0    0    
+#constraints for chemical solver: sl1min, rcour, stimax, cnfact
+   1.00e-5       0.0      16.0       1.0       
+#Read input and output file names:
+TherAkin10.dat                  ! thermodynamic database
+iter.dat                        ! iteration information
+co2d_conc.dat                   ! aqueous concentrations in tecplot form
+co2d_min.dat                    ! mineral data  in tecplot form
+co2d_gas.dat                    ! gas data  in tecplot form
+co2d_tim.dat                    ! concentrations at specific elements over time
+#Weighting parameters:  itime wupc,dffun,dffung
+       1.0       1.0   1.0d-09   1.1d-05           
+#data to convergence criteria:
+    1 0.100E-02  500 0.100E-04   30 0.100E-02  0.00E-05  0.00E-05    !  ........ TOLDC,TOLDR 
+#writing control variables: NWTI NWNOD NWCOM NWMIN NWAQ NWADS NWEXC iconflag(=1:mol/l) minflag(=1:Vf)
+  100   40    4    1    4    0    0    1    1 
+#pointer of nodes for writing in time:
+03M 108b 105K 10C4 108A 10GD 10BR 10KI 10Qm 10WA 10Ff 10NR 10TR 10Z0 10Jg 10QK 10Vm 10be 10YV 10cq 105G 10Be 106x 10EX 109y 10Ic 10Dz 10M9 10SV 10Xo 10I4 10P8 10Uq 10ag 10Ld 10S0 10XK 10cV 10Of 1013 102M 104A 106Y 109U 10DI 10HS 10eD 1
+#pointer of components for writing:
+    3    5    7    8       
+#pointer of minerals for writing:
+    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16   17   18   19   20
+#Individual aqueous species for which to output concentrations in time and plot files:
+    3    5    7    8
+#Adsorption species for which to output concentrations in time and plot files:
+
+#Exchange species for which to output concentrations in time and plot files:
+
+#default values of chemical zone codes for nodes:
+    1    1    1    1    0    0    1    0
+#chemical zone codes for node
+05G 1    1    1    1    2    1    0    0    0    1    0
+0Be 1    1    1	   1	2    1	  0    0    0	 1    0
+06x 1    1    1	   1	2    1	  0    0    0	 1    0
+0EX 1    1    1	   1	2    1	  0    0    0	 1    0
+09y 1    1    1    1    2    1    0    0    0    1    0
+0Ic 1    1    1	   1	2    1	  0    0    0	 1    0
+0Dz 1    1    1	   1	2    1	  0    0    0	 1    0
+0M9 1    1    1	   1	2    1	  0    0    0	 1    0
+0SV 1    1    1    1    2    1    0    0    0    1    0
+0Xo 1    1    1	   1	2    1	  0    0    0	 1    0
+0I4 1    1    1	   1	2    1	  0    0    0	 1    0
+0P8 1    1    1	   1	2    1	  0    0    0	 1    0
+0Uq 1    1    1    1    2    1    0    0    0    1    0
+0ag 1    1    1	   1	2    1	  0    0    0	 1    0
+0Ld 1    1    1	   1	2    1	  0    0    0	 1    0
+0S0 1    1    1	   1	2    1	  0    0    0	 1    0
+0XK 1    1    1    1    2    1    0    0    0    1    0
+0cV 1    1    1	   1	2    1	  0    0    0	 1    0
+0Of 1    1    1	   1	2    1	  0    0    0	 1    0
+013 1    1    1	   1	2    1	  0    0    0	 1    0
+02M 1    1    1    1    2    1    0    0    0    1    0
+04A 1    1    1	   1	2    1	  0    0    0	 1    0
+06Y 1    1    1	   1	2    1	  0    0    0	 1    0
+09U 1    1    1	   1	2    1	  0    0    0	 1    0
+0DI 1    1    1	   1	2    1	  0    0    0	 1    0
+0HS 1    1    1	   1	2    1	  0    0    0	 1    0
+0eD 1    1    1	   1	2    1	  0    0    0	 1    0
+
+# this "end" record is needed now
+end 
+
+A1S 6    1    1    1    1    2    0    0    0    1    0
+A16 6    1    1	   1	1    2	  0    0    0	 1    0
+A1628    1    1	   1	1    2	  0    0    0	 1    0
+A1S28    1    1	   1	1    2	  0    0    0	 1    0
+A17 6 	20    1	   1	2    2	  0    0    0	 1    0
+A16 7 	22    1	   1	2    2	  0    0    0	 1    0
+A16 8 	22    1	   1	2    2	  0    0    0	 1    0
+A16 9 	22    1	   1	2    2	  0    0    0	 1    0
+A1610 	22    1	   1	2    2	  0    0    0	 1    0
+A1611 	22    1	   1	2    2	  0    0    0	 1    0
+A1612 	22    1	   1	2    2	  0    0    0	 1    0
+A1613 	22    1	   1	2    2	  0    0    0	 1    0
+A1614 	22    1	   1	2    2	  0    0    0	 1    0
+A1615 	22    1	   1	2    2	  0    0    0	 1    0
+A1616 	22    1	   1	2    2	  0    0    0	 1    0
+A1617 	22    1	   1	2    2	  0    0    0	 1    0
+A1618 	22    1	   1	2    2	  0    0    0	 1    0
+A1619 	22    1	   1	2    2	  0    0    0	 1    0
+A1620 	22    1	   1	2    2	  0    0    0	 1    0
+A1621 	22    1	   1	2    2	  0    0    0	 1    0
+A1622 	22    1	   1	2    2	  0    0    0	 1    0
+A1623 	22    1	   1	2    2	  0    0    0	 1    0
+A1624 	22    1	   1	2    2	  0    0    0	 1    0
+A1625 	22    1	   1	2    2	  0    0    0	 1    0
+A1626 	22    1	   1	2    2	  0    0    0	 1    0
+A1627 	22    1	   1	2    2	  0    0    0	 1    0
+A1728 	20    1	   1	2    2	  0    0    0	 1    0
+
+03M 108b 105K 10C4 108A 10GD 10BR 10KI 10Qm 10WA 10Ff 10NR 10TR 10Z0 10Jg 10QK 10Vm 10be 10YV 10cq 1
+05G 10Be 106x 10EX 109y 10Ic 10Dz 10M9 10SV 10Xo010I4 10P8 10Uq 10ag 10Ld 10S0 10XK 10cV 10Of 1013 1
+02M 104A 106Y 109U 10DI 10HS 10eD 1
+
+02M 104A 106Y 109U 10DI 10HS 10eD 1
