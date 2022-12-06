@@ -1,1 +1,1 @@
-
+flow_wang.inp中对flow.inp中需要改的位置使用特殊字符占位了
